@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rolex Watches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Бокове меню -->
+  <div class="sidebar">
+    <div class="brand">
+      <div class="logo">⌂</div>
+      <div>
+        <div class="title">Rolex</div>
+        <div class="subtitle">Luxury Watches</div>
+      </div>
+    </div>
+    <div class="nav">
+      <button class="active" data-page="home"><span class="ico">🏠</span> Головна</button>
+      <button data-page="about"><span class="ico">📖</span> Про компанію</button>
+      <button data-page="shops"><span class="ico">🏬</span> Про нас</button>
+    </div>
+    <div class="footer">© 2025 Rolex Store</div>
+  </div>
+
+  <!-- Контент -->
+  <div class="content">
+    <!-- Головна -->
+    <div id="home" class="page active">
+      <div class="box">ROLEX</div>
+      <div class="watches" id="watches"></div>
+      <div class="box2">BUY ONE CLICK!</div>
+    </div>
+
+    <!-- Про компанію -->
+    <div id="about" class="page">
+      <div class="box">Про компанію</div>
+      <div class="box3">
+        Компанія заснована 1905 року двома німцями — 
+        Гансом Вільсдорфом (Hans Wilsdorf) та його зятем Альфредом Даві (Alfred Davis).
+        Rolex став символом точності, розкоші та інновацій у світі годинників.
+      </div>
+    </div>
+
+    <!-- Про нас -->
+    <div id="shops" class="page">
+      <div class="box">Наші магазини</div>
+      <ul class="shops-list">
+        <li>Київ, вул. Шевченка, 15</li>
+        <li>Львів, вул. Франка, 22</li>
+        <li>Одеса, вул. Дерибасівська, 101</li>
+        <li>Харків, вул. Сумська, 77</li>
+        <li>Дніпро, вул. Гагаріна, 33</li>
+        <li>Запоріжжя, вул. Соборна, 49</li>
+        <li>Полтава, вул. Європейська, 5</li>
+        <li>Вінниця, вул. Пирогова, 88</li>
+        <li>Чернігів, вул. Незалежності, 12</li>
+        <li>Ужгород, вул. Корзо, 3</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Модальне вікно -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
