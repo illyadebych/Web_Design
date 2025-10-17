@@ -15,7 +15,12 @@ export default defineConfig([
     ],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,          // стандартні браузерні глобали
+        describe: 'readonly',        // для Cypress
+        it: 'readonly',              // для Cypress
+        cy: 'readonly',              // для Cypress
+      },
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
